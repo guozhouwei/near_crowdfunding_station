@@ -1,16 +1,30 @@
 # NEAR去中心化募捐活动平台
 ## React项目文件结构
+```shell
+NEAR_CROWDFUNDING_STATION
+                |___  node_modules
+                |___  public
+                |___  src
+                |___  App.css
+                |___  package.json
 
-### package.json
+```
+
+### ● package.json
 ```shell
 这个文件是管理下载的依赖包,在项目中经常用到的是"react"库，“react-dom”（将jsx语法渲染到dom中）
 在项目中最重要的命令是“start”启动项目，"bulid"的作用就是将项目打包。
 ``` 
 
-```rust
-1、发布募捐活动，募集near币
-2、用户参与募捐活动，向募捐指定账户转入NEAR
-2、对捐赠的用户赠送纪念NFT
+### ● public文件夹
+1.favicon.ico
+```shell
+是浏览器tab上图标，也是这个项目的一个标志，也可以说是代表一个公司的标志。可以替换。
+```
+2.index.html
+```html
+项目的入口文件，引用了第三方类库啊，还可以引入cdn
+<div id="root"></div>是项目的总容器，所有的内容存储在这个容器中。这个容器有且只能有一个。
 ```
 
 
