@@ -1,4 +1,6 @@
 import './App.css';
+import React from 'react';
+import * as nearAPI from 'near-api-js'
 
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React @@@@
         </a>
       </header>
     </div>
