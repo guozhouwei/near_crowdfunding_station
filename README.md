@@ -34,9 +34,19 @@ NEAR_CROWDFUNDING_STATION
 其中：
 ReactDOM.render(）的作用是将<App/>的内容渲染到根“root”中去。
 document.getElementById('root')中的"root"便是index.html中的"root"了，<App />便是引用页面内容了。在这里，<App />也可以写一些内容(结构,样式,逻辑)是整个项目的根组件。比如:
+
         ReactDOM.render(<p>Hello World</p>, document.getElementById('root'));
+
 import App from './App'是为了将App.js的内容引入到index.js文件中。
 ```
+
+• App.js
+```html
+该类是继承react提供的component，export default App;是为了将App公开，index.js才能够引用。App.js继承了component的话，必须使用render进行渲染。return的内容是类似于html结构的内容，就是jsx，jsx语法是react的主要语法。内部的div的className是为了区分html语法的一个类名，这个是div的样式引用。在这个文件中，只能用一个div容器，如果在div的同级目录添加别的内容，便会报错: 
+        ⓧ [js] JSX 表达式必须具有一个父元素。
+className="App"，是引用到App.css的样式。注意，页面内容样式是就近原则，首先用App.css的样式，App.css是组件的样式，index.css是全局的样式。
+```
+
 
 
 
