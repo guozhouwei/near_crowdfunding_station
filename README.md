@@ -10,31 +10,32 @@ NEAR_CROWDFUNDING_STATION
 
 ```
 
-### • package.json
+### ➜ package.json
 ```shell
 这个文件是管理下载的依赖包,在项目中经常用到的是"react"库，“react-dom”（将jsx语法渲染到dom中）
 在项目中最重要的命令是“start”启动项目，"bulid"的作用就是将项目打包。
 ``` 
 
-### • public文件夹
-◦ favicon.ico
+### ➜ public文件夹
+• favicon.ico
 ```shell
 是浏览器tab上图标，也是这个项目的一个标志，也可以说是代表一个公司的标志。可以替换。
 ```
-◦ index.html
+• index.html
 ```html
 项目的入口文件，引用了第三方类库啊，还可以引入cdn
 <div id="root"></div>是项目的总容器，所有的内容存储在这个容器中。这个容器有且只能有一个。
 ```
 
-### • src文件夹
-◦ index.js
+### ➜ src文件夹
+• index.js
 ```html
 存放的是这个项目的核心内容，也就是我们的主要工作区域。其中，index.js文件是和index.html进行关联的文件的唯一接口。
 其中：
 ReactDOM.render(）的作用是将<App/>的内容渲染到根“root”中去。
 document.getElementById('root')中的"root"便是index.html中的"root"了，<App />便是引用页面内容了。在这里，<App />也可以写一些内容(结构,样式,逻辑)是整个项目的根组件。比如:
         ReactDOM.render(<p>Hello World</p>, document.getElementById('root'));
+import App from './App'是为了将App.js的内容引入到index.js文件中。
 ```
 
 
