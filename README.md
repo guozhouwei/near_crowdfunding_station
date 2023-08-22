@@ -2,7 +2,7 @@
 ## React项目文件结构
 
 ### package.json
-     ```key
+     ```rust
       这个文件是管理下载的依赖包,在项目中经常用到的是"react"库，“react-dom”（将jsx语法渲染到dom中）
       在项目中最重要的命令是“start”启动项目，"bulid"的作用就是将项目打包。
      ``` 
